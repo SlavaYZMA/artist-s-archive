@@ -4,10 +4,11 @@ import { useLanguage } from '@/contexts/LanguageContext';
 interface ProjectData {
   titleKey: string;
   year: string;
+  externalLink?: string;
   mediumKey: string;
   descriptionKey: string;
   longDescriptionKey: string;
-  externalLink?: string;
+  
 }
 
 const projectsData: Record<string, ProjectData> = {
@@ -15,25 +16,28 @@ const projectsData: Record<string, ProjectData> = {
     titleKey: 'project.adjudication.title',
     year: '2024',
     mediumKey: 'project.adjudication.medium',
+    externalLink: 'https://adjudication.netlify.app/',
     descriptionKey: 'project.adjudication.description',
     longDescriptionKey: 'project.adjudication.longDescription',
-    externalLink: 'https://adjudication.netlify.app/',
+    
   },
   present: {
     titleKey: 'project.present.title',
     year: '2023',
+    externalLink: 'https://vistrum.netlify.app/',
     mediumKey: 'project.present.medium',
     descriptionKey: 'project.present.description',
     longDescriptionKey: 'project.present.longDescription',
-    externalLink: 'https://vistrum.netlify.app/',
+    
   },
   'quantum-portraits': {
     titleKey: 'project.quantum.title',
     year: '2022',
+    externalLink: 'https://quantportrait.netlify.app/',
     mediumKey: 'project.quantum.medium',
     descriptionKey: 'project.quantum.description',
     longDescriptionKey: 'project.quantum.longDescription',
-    externalLink: 'https://quantportrait.netlify.app/',
+    
   },
 };
 
