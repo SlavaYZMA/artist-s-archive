@@ -72,7 +72,7 @@ const translations: Record<Language, Record<string, string>> = {
     'essay.machine.year': '2022',
     
     // Statement
-    statement.text = `
+    'statement.text': `
 ## Practice
 My artistic practice focuses on the analysis of **perceptual** and **algorithmic structures** through which the experience of trauma is formed. The primary focus is on exploring methods for **recording, presenting, and transmitting experiences of gender-based violence** without visualizing the violence itself and without reproducing relations of power.
 
@@ -90,8 +90,7 @@ The practice addresses questions of **vulnerability, power, and fairness**. Proj
 The viewer becomes involved in processes of **observation, collaboration, and interaction**, participating in the system of experience recording and transmission. The work creates space for reflection on the limits of control, responsibility, and participation, ensuring an ethical distance between observer and subject.
 
 ## Ethical Position
-All projects prioritize **respect for lived trauma** and exclude exploitative visualization of violence. **Anonymity, hidden algorithms, and structured presentation** establish conditions in which the fact of existence is documented, rather than the content of trauma.
-`, 
+All projects prioritize **respect for lived trauma** and exclude exploitative visualization of violence. **Anonymity, hidden algorithms, and structured presentation** establish conditions in which the fact of existence is documented, rather than the content of trauma.`,
     // Contact
     'contact.email': 'studio@artist.com',
     'contact.cv': 'Download CV (PDF)',
