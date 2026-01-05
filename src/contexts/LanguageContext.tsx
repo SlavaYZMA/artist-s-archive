@@ -53,12 +53,12 @@ const translations: Record<Language, Record<string, string>> = {
     'project.quantum.longDescription': 'The project investigates personality not as a fixed object but as an event that emerges over time through observation. The portrait is generated using true quantum random number generators, with each image point treated as a “quantum particle” governed by the principles of superposition, wave function, and entanglement. Through interaction with the system, the face “occurs” — it trembles, changes, and disassembles depending on the angle of observation. The project transforms the portrait into a process, demonstrating the impossibility of fixing identity and illustrating the interaction between observer and object. The digital archive captures the wave-like nature of the face, creating a collection of probabilistic images, where each act of observation is unique.',
     
     // In Progress
-    'inprogress.fragments.title': 'Fragments of Attention',
-    'inprogress.fragments.description': 'Research into attention economies and cognitive labor.',
+    'inprogress.fragments.title': 'Sweet Violence',
+    'inprogress.fragments.description': 'Research into attention economies and cognitive labor.Collaborative embroidery of candy boxes containing symbols of domestic violence. The project examines how social gestures after abuse can conceal actual harm.',
     'inprogress.fragments.status': 'Research phase',
     
-    'inprogress.border.title': 'Border Conditions',
-    'inprogress.border.description': 'Mapping invisible boundaries in networked space.',
+    'inprogress.border.title': 'The Public Book',
+    'inprogress.border.description': 'Public recording of women’s stories in a book during a 24-hour performance. The project documents collective gender-based experiences through a public and intimate act of testimony.',
     'inprogress.border.status': 'Development',
     
     // Essays
@@ -130,12 +130,12 @@ The work is ultimately concerned with what remains when systems are stripped of 
     'project.quantum.longDescription': 'Проект исследует личность не как фиксированный объект, а как событие, возникающее во времени наблюдения. Портрет формируется с помощью генераторов истинных случайных чисел на основе квантовых процессов, где каждая точка изображения — «квантовая частица», подчиняющаяся принципам суперпозиции, волновой функции и запутанности. При взаимодействии с системой лицо «происходит» — дрожит, изменяется и распадается в зависимости от угла наблюдения. Проект превращает портрет в процесс, демонстрируя невозможность закрепления личности и иллюстрируя взаимодействие наблюдателя и объекта. Цифровой архив портретов фиксирует волновую природу лица, создавая коллекцию вероятностных образов, где каждый акт наблюдения уникален.',
     
     // In Progress
-    'inprogress.fragments.title': 'Фрагменты внимания',
-    'inprogress.fragments.description': 'Исследование экономики внимания и когнитивного труда.',
+    'inprogress.fragments.title': 'Сладость насилия',
+    'inprogress.fragments.description': 'Коллективная вышивка коробок конфет, внутри которых скрыты символы домашнего насилия. Проект исследует, как социальные жесты после насилия могут маскировать фактический вред.',
     'inprogress.fragments.status': 'Фаза исследования',
     
-    'inprogress.border.title': 'Пограничные условия',
-    'inprogress.border.description': 'Картографирование невидимых границ в сетевом пространстве.',
+    'inprogress.border.title': 'Общественная книга',
+    'inprogress.border.description': 'Публичная запись историй женщин в книге во время 24-часового перформанса. Проект фиксирует коллективный гендерный опыт через публичный и интимный акт свидетельства.',
     'inprogress.border.status': 'Разработка',
     
     // Essays
