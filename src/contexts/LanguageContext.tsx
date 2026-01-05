@@ -72,15 +72,26 @@ const translations: Record<Language, Record<string, string>> = {
     'essay.machine.year': '2022',
     
     // Statement
-    'statement.text': `My practice operates at the threshold between human perception and computational processes. I am interested in the moment where systems—whether technological, social, or linguistic—become visible through their failures, edges, and unexpected behaviors.
+    'statement.text': `Practice
+My artistic practice focuses on the analysis of perceptual and algorithmic structures through which the experience of trauma is formed. The primary focus is on exploring methods for recording, presenting, and transmitting experiences of gender-based violence without visualizing the violence itself and without reproducing relations of power.
 
-The work does not seek to explain or illustrate technology. Instead, it uses computational methods as a lens through which to examine contemporary conditions of existence: the fragmentation of attention, the automation of judgment, the persistence of presence in networked space.
+Methodology
+I employ observation, archives, and algorithmic or digital processes as tools and co-authors. Technology is not an end in itself but a means to investigate the limits of visibility, ethical engagement, and collective witnessing. Projects often involve audience participation while remaining anonymous and structured to avoid hierarchy between individual experiences.
 
-Each project begins with a question rather than a form. The medium emerges from the inquiry. I work with code, video, installation, and text, choosing whatever substrate best holds the investigation.
+Themes and Investigation
+The practice addresses questions of vulnerability, power, and fairness. Projects explore:
 
-I am drawn to processes that operate below the threshold of visibility—data flows, algorithmic decisions, quantum events—and to the challenge of making such processes available to perception without reducing them to spectacle.
+how assessment systems and algorithmic processes shape subjective experience;
 
-The work is ultimately concerned with what remains when systems are stripped of their interfaces: the raw material of contemporary experience, encountered directly.`,
+how trauma and experiences of violence can be recorded and represented without exploitation;
+
+how collective presence and testimony create new forms of documentation and perception.
+
+Audience Engagement
+The viewer becomes involved in processes of observation, collaboration, and interaction, participating in the system of experience recording and transmission. The work creates space for reflection on the limits of control, responsibility, and participation, ensuring an ethical distance between observer and subject.
+
+Ethical Position
+All projects prioritize respect for lived trauma and exclude exploitative visualization of violence. Anonymity, hidden algorithms, and structured presentation establish conditions in which the fact of existence is documented, rather than the content of trauma.`,
     
     // Contact
     'contact.email': 'studio@artist.com',
@@ -149,13 +160,26 @@ The work is ultimately concerned with what remains when systems are stripped of 
     'essay.machine.year': '2022',
     
     // Statement
-    'statement.text': `Моя практика действует на границе между человеческим восприятием и вычислительными процессами. Меня интересует момент, когда системы—технологические, социальные или лингвистические—становятся видимыми через свои сбои, края и неожиданное поведение.
+    'statement.text': `Практика
+Моя художественная практика сосредоточена на анализе перцептивных и алгоритмических структур, через которые формируется опыт травмы. Основной фокус — исследование способов фиксации, представления и передачи переживаний гендерного насилия без визуализации самого насилия и без репродукции властных отношений.
 
-Работа не стремится объяснить или иллюстрировать технологию. Вместо этого она использует вычислительные методы как линзу для исследования современных условий существования: фрагментации внимания, автоматизации суждения, устойчивости присутствия в сетевом пространстве.
+Методология
+В работе я использую наблюдение, архивы, алгоритмические и цифровые процессы как инструменты и соавторов. Технологии не являются целью сами по себе; они служат средством для исследования границ допустимой видимости, этического взаимодействия и коллективного свидетельства. Проекты часто включают участие публики, но остаются анонимными и структурированы так, чтобы исключить иерархию между индивидуальными переживаниями.
 
-Каждый проект начинается с вопроса, а не с формы. Медиум возникает из исследования. Я работаю с кодом, видео, инсталляцией и текстом, выбирая тот субстрат, который лучше всего удерживает исследование.
+Темы и исследование
+Практика обращается к вопросам уязвимости, власти и справедливости. Проекты исследуют:
 
-Меня привлекают процессы, действующие ниже порога видимости—потоки данных, алгоритмические решения, квантовые события—и задача сделать такие процессы доступными для восприятия без сведения их к зрелищу.`,
+как системы оценки и алгоритмические процессы воздействуют на субъективный опыт;
+
+как травма и переживание насилия фиксируются и представляются без эксплуатации;
+
+как коллективное присутствие и свидетельство создают новые формы документации и восприятия.
+
+Фокус на зрителе
+Зритель вовлекается в процессы наблюдения, коллаборации и взаимодействия, становясь участником системы фиксации и передачи опыта. Работа формирует пространство для размышления о границах контроля, ответственности и участия, обеспечивая этическую дистанцию между наблюдателем и объектом исследования.
+
+Этическая позиция
+Все проекты ориентированы на уважение к пережитой травме и исключают эксплуатирующую визуализацию насилия. Анонимность, скрытые алгоритмы и структурированное представление создают условия, в которых фиксируется факт существования, а не содержание травмы.`,
     
     // Contact
     'contact.email': 'studio@artist.com',
