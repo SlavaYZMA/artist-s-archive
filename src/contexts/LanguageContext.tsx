@@ -39,18 +39,18 @@ const translations: Record<Language, Record<string, string>> = {
     // Projects
     'project.adjudication.title': 'Adjudication',
     'project.adjudication.medium': 'Generative installation, custom software',
-    'project.adjudication.description': 'An exploration of automated decision-making systems and their impact on human judgment.',
-    'project.adjudication.longDescription': 'Adjudication examines the growing presence of algorithmic decision-making in judicial and administrative systems. The work presents a real-time generative environment where fragments of legal language, case data, and procedural logic collide and reform, questioning the nature of justice when filtered through computational processes.',
+    'project.adjudication.description': 'Exploring algorithmic evaluation that assesses a person without their intervention, highlighting questions of power, vulnerability, and fairness.',
+    'project.adjudication.longDescription': 'The work investigates the experience of being evaluated by a system without the possibility of influencing or altering the outcome. Regardless of actions, appearance, or behavior, a person receives a characterization, the reasoning for which remains undisclosed. The installation functions as a hidden algorithm, creating a sense of vulnerability before incomprehensible systems of power. The viewer is confronted with questions: what does it mean to be assessed without knowing the criteria? What is it like to become an object subjected to harm through an evaluative process? The work does not reveal the mechanism of assessment, leaving it entirely authorial and hidden.',
     
     'project.present.title': 'Present (Присутствуют)',
-    'project.present.medium': 'Video installation, multi-channel',
-    'project.present.description': 'Meditation on presence and absence in digital spaces.',
-    'project.present.longDescription': 'Present investigates the paradox of digital presence—how we exist in multiple locations simultaneously through our data traces while remaining physically anchored. The installation captures real-time network activity, transforming invisible data flows into visible phenomena.',
+    'project.present.medium': 'Video installation, participatory',
+    'project.present.description': 'Anonymous close-up recordings of the eyes of women who have survived gender-based violence. The project registers presence without visualizing violence or narrating trauma.',
+    'project.present.longDescription': '“Present” is a digital video installation based on the anonymous participation of women who have survived gender-based violence. The project collects five-second close-ups of the eyes, excluding the face, body, voice, or story. The gaze becomes the sole visual element, representing a minimal form of presence. Each recording is added equally, without hierarchy, forming an ever-expanding digital field of multiple gazes. The viewer enters this space, where presence is recorded as a fact of existence rather than a narrative or depiction of violence. The project explores the resilience of presence and collective witnessing, maintaining anonymity and respect for the trauma experienced.',
     
     'project.quantum.title': 'Quantum Portraits',
     'project.quantum.medium': 'Photography, computational imaging',
-    'project.quantum.description': 'Portraits generated through quantum random processes.',
-    'project.quantum.longDescription': 'Quantum Portraits uses true random number generators based on quantum phenomena to determine every aspect of portrait composition. The resulting images occupy an uncertain space between intention and chance, reflecting the fundamental indeterminacy at the heart of physical reality.',
+    'project.quantum.description': 'Portrait as a process that exists only during observation. Uses quantum random number generators to create probabilistic images of the face.',
+    'project.quantum.longDescription': 'The project investigates personality not as a fixed object but as an event that emerges over time through observation. The portrait is generated using true quantum random number generators, with each image point treated as a “quantum particle” governed by the principles of superposition, wave function, and entanglement. Through interaction with the system, the face “occurs” — it trembles, changes, and disassembles depending on the angle of observation. The project transforms the portrait into a process, demonstrating the impossibility of fixing identity and illustrating the interaction between observer and object. The digital archive captures the wave-like nature of the face, creating a collection of probabilistic images, where each act of observation is unique.',
     
     // In Progress
     'inprogress.fragments.title': 'Fragments of Attention',
@@ -116,18 +116,18 @@ The work is ultimately concerned with what remains when systems are stripped of 
     // Projects
     'project.adjudication.title': 'Вынесение решений',
     'project.adjudication.medium': 'Генеративная инсталляция, авторское ПО',
-    'project.adjudication.description': 'Исследование автоматизированных систем принятия решений и их влияния на человеческое суждение.',
-    'project.adjudication.longDescription': 'Работа исследует растущее присутствие алгоритмического принятия решений в судебных и административных системах. Произведение представляет генеративную среду реального времени, где фрагменты юридического языка, данные дел и процедурная логика сталкиваются и преобразуются.',
+    'project.adjudication.description': 'Исследование алгоритмической оценки, демонстрирующей, как система оценивает человека без его влияния, раскрывая вопросы власти, уязвимости и справедливости.',
+    'project.adjudication.longDescription': 'Работа исследует опыт оценки, произведённой системой без возможности вмешательства или изменения результата. Независимо от действий, внешности или поведения, человек получает характеристику, о причинах которой не информирован. Инсталляция функционирует как скрытый алгоритм, создающий ощущение уязвимости перед непостижимыми системами власти. Зритель сталкивается с вопросами: что значит быть оценённым без понимания критериев? Каково это — оказаться объектом, над которым совершено насилие через процесс оценки? Работа не раскрывает механизм генерации оценки, оставляя его полностью авторским и скрытым.',
     
     'project.present.title': 'Присутствуют',
-    'project.present.medium': 'Видеоинсталляция, многоканальная',
-    'project.present.description': 'Медитация о присутствии и отсутствии в цифровых пространствах.',
-    'project.present.longDescription': 'Работа исследует парадокс цифрового присутствия—как мы существуем в нескольких местах одновременно через следы наших данных, оставаясь физически привязанными. Инсталляция захватывает сетевую активность в реальном времени, преобразуя невидимые потоки данных в видимые явления.',
+    'project.present.medium': 'Видеоинсталляция, партиципаторная',
+    'project.present.description': 'Анонимные крупноплановые записи глаз женщин, переживших гендерное насилие. Проект фиксирует факт присутствия без визуализации насилия и без рассказа о травме.',
+    'project.present.longDescription': 'Присутствуют» — цифровая видеоинсталляция, основанная на анонимном участии женщин, переживших гендерное насилие. Проект собирает пятисекундные крупноплановые записи глаз, исключая лицо, тело, голос или историю. Единственным визуальным элементом остаётся взгляд как минимальная форма присутствия. Каждая запись добавляется равноправно, без иерархии, создавая постоянно расширяющееся цифровое поле множественных взглядов. Зритель оказывается внутри этого пространства, где присутствие фиксируется как факт существования, а не как повествование или визуализация насилия. Проект исследует устойчивость присутствия и коллективное свидетельство, обеспечивая анонимность и уважение к пережитой травме.',
     
     'project.quantum.title': 'Квантовые портреты',
     'project.quantum.medium': 'Фотография, вычислительная визуализация',
-    'project.quantum.description': 'Портреты, созданные с помощью квантовых случайных процессов.',
-    'project.quantum.longDescription': 'Работа использует генераторы истинных случайных чисел на основе квантовых явлений для определения каждого аспекта композиции портрета. Полученные изображения занимают неопределённое пространство между намерением и случаем.',
+    'project.quantum.description': 'Портрет как процесс, существующий только во время наблюдения. Использует квантовые генераторы случайных чисел для создания вероятностного изображения лица.',
+    'project.quantum.longDescription': 'Проект исследует личность не как фиксированный объект, а как событие, возникающее во времени наблюдения. Портрет формируется с помощью генераторов истинных случайных чисел на основе квантовых процессов, где каждая точка изображения — «квантовая частица», подчиняющаяся принципам суперпозиции, волновой функции и запутанности. При взаимодействии с системой лицо «происходит» — дрожит, изменяется и распадается в зависимости от угла наблюдения. Проект превращает портрет в процесс, демонстрируя невозможность закрепления личности и иллюстрируя взаимодействие наблюдателя и объекта. Цифровой архив портретов фиксирует волновую природу лица, создавая коллекцию вероятностных образов, где каждый акт наблюдения уникален.',
     
     // In Progress
     'inprogress.fragments.title': 'Фрагменты внимания',
