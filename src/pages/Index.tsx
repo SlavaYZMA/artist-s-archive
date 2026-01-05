@@ -7,7 +7,7 @@ export default function Index() {
     <div className="min-h-[calc(100vh-8rem)] flex flex-col justify-center">
       <div className="content-max">
         <h1 className="text-2xl md:text-3xl font-light mb-8 tracking-tight">
-          Artist Name
+          Slava Solen
         </h1>
         <p className="text-muted-foreground text-body leading-relaxed">
           {t('home.statement')}
