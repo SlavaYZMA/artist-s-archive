@@ -72,27 +72,26 @@ const translations: Record<Language, Record<string, string>> = {
     'essay.machine.year': '2022',
     
     // Statement
-    'statement.text': `Practice
-My artistic practice focuses on the analysis of perceptual and algorithmic structures through which the experience of trauma is formed. The primary focus is on exploring methods for recording, presenting, and transmitting experiences of gender-based violence without visualizing the violence itself and without reproducing relations of power.
+    statement.text = `
+## Practice
+My artistic practice focuses on the analysis of **perceptual** and **algorithmic structures** through which the experience of trauma is formed. The primary focus is on exploring methods for **recording, presenting, and transmitting experiences of gender-based violence** without visualizing the violence itself and without reproducing relations of power.
 
-Methodology
-I employ observation, archives, and algorithmic or digital processes as tools and co-authors. Technology is not an end in itself but a means to investigate the limits of visibility, ethical engagement, and collective witnessing. Projects often involve audience participation while remaining anonymous and structured to avoid hierarchy between individual experiences.
+## Methodology
+I employ **observation**, **archives**, and **algorithmic or digital processes** as tools and co-authors. Technology is not an end in itself but a means to investigate the limits of visibility, ethical engagement, and collective witnessing. Projects often involve audience participation while remaining anonymous and structured to avoid hierarchy between individual experiences.
 
-Themes and Investigation
-The practice addresses questions of vulnerability, power, and fairness. Projects explore:
+## Themes and Investigation
+The practice addresses questions of **vulnerability, power, and fairness**. Projects explore:
 
-how assessment systems and algorithmic processes shape subjective experience;
+- how assessment systems and algorithmic processes shape subjective experience;
+- how trauma and experiences of violence can be recorded and represented without exploitation;
+- how collective presence and testimony create new forms of documentation and perception.
 
-how trauma and experiences of violence can be recorded and represented without exploitation;
+## Audience Engagement
+The viewer becomes involved in processes of **observation, collaboration, and interaction**, participating in the system of experience recording and transmission. The work creates space for reflection on the limits of control, responsibility, and participation, ensuring an ethical distance between observer and subject.
 
-how collective presence and testimony create new forms of documentation and perception.
-
-Audience Engagement
-The viewer becomes involved in processes of observation, collaboration, and interaction, participating in the system of experience recording and transmission. The work creates space for reflection on the limits of control, responsibility, and participation, ensuring an ethical distance between observer and subject.
-
-Ethical Position
-All projects prioritize respect for lived trauma and exclude exploitative visualization of violence. Anonymity, hidden algorithms, and structured presentation establish conditions in which the fact of existence is documented, rather than the content of trauma.`,
-    
+## Ethical Position
+All projects prioritize **respect for lived trauma** and exclude exploitative visualization of violence. **Anonymity, hidden algorithms, and structured presentation** establish conditions in which the fact of existence is documented, rather than the content of trauma.
+`;   
     // Contact
     'contact.email': 'studio@artist.com',
     'contact.cv': 'Download CV (PDF)',
