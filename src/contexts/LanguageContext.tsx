@@ -91,7 +91,7 @@ The viewer becomes involved in processes of **observation, collaboration, and in
 
 ## Ethical Position
 All projects prioritize **respect for lived trauma** and exclude exploitative visualization of violence. **Anonymity, hidden algorithms, and structured presentation** establish conditions in which the fact of existence is documented, rather than the content of trauma.
-`;   
+`, 
     // Contact
     'contact.email': 'studio@artist.com',
     'contact.cv': 'Download CV (PDF)',
