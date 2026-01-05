@@ -81,40 +81,26 @@ export default function ProjectDetail() {
           <span className="text-label block mb-1">{t('label.medium')}</span>
           <span className="text-foreground">{t(project.mediumKey)}</span>
         </div>
-      </div> 
 
-      {/* Ссылка на внешний проект сразу после Medium */}
-  {project.externalLink && (
-    <div className="mt-2">
-      <a
-        href={project.externalLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-      >
-        {t('label.externalLink')} →
-      </a>
-    </div>
-  )}
-</div>
+        {/* Ссылка на внешний проект сразу после Medium */}
+        {project.externalLink && (
+          <div className="mt-2">
+            <a 
+              href={project.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {t('label.externalLink')} →
+            </a>
+          </div>
+        )}
+      </div> 
 
       <div className="border-t border-border pt-8 space-y-6">
         <p className="text-body">{t(project.descriptionKey)}</p>
         <p className="text-muted-foreground text-body">{t(project.longDescriptionKey)}</p>
       </div>
-
-      {project.externalLink && (
-        <div className="mt-8 pt-8 border-t border-border">
-          <a 
-            href={project.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            {t('label.externalLink')} →
-          </a>
-        </div>
-      )}
     </div>
   );
 }
