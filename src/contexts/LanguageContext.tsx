@@ -20,7 +20,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Home
-    'home.statement': 'Working at the intersection of technology, perception, and systems of meaning. Exploring how algorithmic processes reveal hidden structures of contemporary existence.',
+    'home.statement': 'Practice focuses on the analysis of perceptual and algorithmic structures through which the experience of trauma is formed. Working with observation, archives, and systems of evaluation, I investigate how gender-based violence can be recorded and presented without visualizing the violence itself and without reproducing relations of power.',
     
     // Labels
     'label.year': 'Year',
@@ -97,7 +97,7 @@ The work is ultimately concerned with what remains when systems are stripped of 
     'nav.contact': 'Контакт',
     
     // Home
-    'home.statement': 'Работаю на пересечении технологий, восприятия и систем значений. Исследую, как алгоритмические процессы раскрывают скрытые структуры современного существования.',
+    'home.statement': 'Практика фокусируется на анализе перцептивных и алгоритмических структур, через которые формируется опыт травмы. Работая с наблюдением, архивами и системами оценки, я исследую, каким образом гендерное насилие может быть зафиксировано и представлено без визуализации самого насилия и без воспроизводства властных отношений.',
     
     // Labels
     'label.year': 'Год',
