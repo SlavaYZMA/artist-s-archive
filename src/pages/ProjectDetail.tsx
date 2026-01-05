@@ -17,6 +17,7 @@ const projectsData: Record<string, ProjectData> = {
     mediumKey: 'project.adjudication.medium',
     descriptionKey: 'project.adjudication.description',
     longDescriptionKey: 'project.adjudication.longDescription',
+    externalLink: 'https://adjudication.netlify.app/',
   },
   present: {
     titleKey: 'project.present.title',
@@ -24,6 +25,7 @@ const projectsData: Record<string, ProjectData> = {
     mediumKey: 'project.present.medium',
     descriptionKey: 'project.present.description',
     longDescriptionKey: 'project.present.longDescription',
+    externalLink: 'https://vistrum.netlify.app/',
   },
   'quantum-portraits': {
     titleKey: 'project.quantum.title',
@@ -31,6 +33,7 @@ const projectsData: Record<string, ProjectData> = {
     mediumKey: 'project.quantum.medium',
     descriptionKey: 'project.quantum.description',
     longDescriptionKey: 'project.quantum.longDescription',
+    externalLink: 'https://quantportrait.netlify.app/',
   },
 };
 
