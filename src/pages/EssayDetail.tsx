@@ -9,42 +9,38 @@ interface EssayData {
 }
 
 const essaysData: Record<string, EssayData> = {
-  'systems-of-seeing': {
-    titleKey: 'essay.systems.title',
-    year: '2024',
-    content: `What does it mean to see through a system? Not to see a system, but to adopt its mode of perception, to inhabit its particular blindnesses and clarities.
+const essaysData: Record<string, EssayData> = {
+  'spectral-flesh': {
+    titleKey: 'essay.skiagraphic.title',
+    year: '2025',
+    content: `The project explores the body as an "occlusion system" — a physical object whose presence is documented through the absence of light. At the center of the installation, a white wall and high-contrast light transform the viewer's shadow into a "two-dimensional corpse" (cadere), a liminal state between the living subject and its digital trace.
 
-Every technology of vision carries with it a theory of what is worth seeing. The camera obscura taught us about projection and inversion. Photography introduced the decisive moment. Digital imaging dissolved the boundary between capture and construction.
+In the era of total surveillance, the shadow ceases to be a private space. It turns into an object of algorithmic voyeurism—a situation where programmed code, not a human, "peeks" at the intimate aspects of your anatomy. The shadow is a void (a deficit of photons), captured by a camera and subjected to reconstruction—a process where AI attempts to calculate the three-dimensional volume of the body based on its flat two-dimensional silhouette.
 
-Contemporary machine vision systems do not see as we see. They operate on probabilities, patterns, statistical regularities. They find faces where we see shadows. They miss what is obvious to us and notice what we cannot perceive.
+This creates a liminal state (from Lat. limen — threshold). The shadow is liminal because it is no longer the person, but has not yet become just part of the wall; it is immaterial but visually provable. This state is stuck between the physical reality of the subject and its digital archive.
 
-To work with these systems is not to correct them or to expose their failures—though both are necessary—but to understand what they reveal about the nature of seeing itself. Every system of vision is also a system of blindness. What is excluded defines the frame as much as what is included.
+In the context of Julia Kristeva's theory, this shadow trace is interpreted as the "abject." The shadow is what the subject "casts off" to assert their presence, but this casting off causes simultaneous fascination and repulsion. The apogee of this abjection occurs when a hidden algorithm attempts to "pull" details of naked flesh out of this black hole, creating a probabilistic portrait. This portrait is not a photograph—it is a statistical guess by a neural network.
 
-The question is not whether machines can see, but what seeing becomes when it is distributed across human and non-human agents, when it operates at scales and speeds that exceed human perception, when it is entangled with systems of power and control.`,
-    contentRu: `Что значит видеть через систему? Не видеть систему, а принять её способ восприятия, обитать в её особых слепых зонах и ясностях.
+The process of image creation by a neural network inevitably leads to hallucination. Facing the void of the shadow, the AI extracts random fragments of bodies from its latent space to fill the gaps. This becomes a manifestation of a new paradigm of control imposed by technocratic actors: everything that generates data must be classified and appropriated.
 
-Каждая технология зрения несёт в себе теорию того, что стоит видеть. Камера-обскура научила нас проекции и инверсии. Фотография ввела решающий момент. Цифровая визуализация растворила границу между захватом и конструированием.
+The result of the reconstruction inevitably falls into the "uncanny valley." This "almost-human" evokes instinctive horror in the viewer, exposing the fact that the algorithm sees us only as biomass. The project literalizes the process of digital violence: a simple action (a shadow on the wall) turns into an act of non-consensual exposure.
 
-Современные системы машинного зрения видят не так, как мы. Они оперируют вероятностями, паттернами, статистическими закономерностями. Они находят лица там, где мы видим тени. Они упускают то, что очевидно для нас, и замечают то, что мы не можем воспринять.
+"Skiagraphic Description" is a warning that in a world of excessive illumination, privacy is illusory. Our presence inevitably generates an absence of light, and therefore generates data. The final provocation of the project is that our shadow is the last battlefield for the right to remain unpredictable.`,
+    contentRu: `Проект исследует тело как «окклюзионную систему» — физический объем, препятствующий распространению фотонов. Его окружением выступает белая стена и световое поле — среда, которая по умолчанию заполнена светом, пока субъект не вносит в неё искажение.
 
-Работать с этими системами означает не исправлять их или разоблачать их неудачи—хотя и то, и другое необходимо—но понимать, что они раскрывают о природе самого видения.`,
+В эпоху тотального надзора тень перестает быть личным пространством. Она превращается в объект алгоритмического вуайеризма — ситуации, когда за интимными аспектами вашей анатомии «подсматривает» не человек, а программный код. Тень — это пустота (дефицит фотонов), которая подвергается реконструированию — процессу, в котором ИИ пытается вычислить трехмерный объем тела на основе его плоского двухмерного силуэта.
+
+Это создает лиминальное состояние (от лат. limen — порог). Тень лиминальна, так как она уже не является человеком, но еще не стала просто частью стены; она нематериальна, но визуально доказуема. Это состояние застряло между физической реальностью субъекта и его цифровым архивом.
+
+В контексте теории Юлии Кристевой этот теневой след интерпретируется как «абъект» (abject). Тень — это то, что субъект «отбрасывает», чтобы утвердить свое присутствие, но этот отброс вызывает одновременно фасцинацию и отвращение. Апогей этой абъекции наступает в момент, когда скрытый алгоритм пытается «вытянуть» детали обнаженной плоти из этой черной дыры, создавая вероятностный портрет — статистическую догадку нейросети.
+
+Процесс создания образа нейросетью неизбежно ведет к галлюцинации. Столкнувшись с пустотой тени, ИИ извлекает из своего латентного пространства случайные фрагменты тел, чтобы заполнить пробелы. Это становится манифестацией новой парадигмы контроля, навязанной технократическими акторами: все, что порождает данные, должно быть классифицировано и присвоено.
+
+Результат реконструкции неизбежно попадает в «зловещую долину» (Uncanny Valley). Этот «почти-человек» вызывает у зрителя инстинктивный ужас, обнажая тот факт, что алгоритм видит в нас лишь биомассу. Проект буквализирует процесс цифрового насилия: простое действие превращается в акт неконсенсуального обнажения.
+
+«Скиаграфическая дескрипция» — это предупреждение о том, что в мире избыточной освещенности приватность иллюзорна. Наша тень — это последнее поле битвы за право оставаться непредсказуемым. Мы должны принять свою абъекцию и использовать её как форму сопротивления.`,
   },
-  'notes-on-absence': {
-    titleKey: 'essay.absence.title',
-    year: '2023',
-    content: `Absence is not the opposite of presence but its condition. Every act of presence creates new absences. Every recording captures certain frequencies while filtering others. Every archive preserves some traces while erasing others.
-
-In networked space, presence and absence become more complex. We are present in multiple locations simultaneously—or rather, our data traces are. We are absent from the physical locations where our effects are felt. We are present to those who observe our traces and absent to those who do not.
-
-The question of presence in digital space is not simply a question of where we are but of what persists. Data traces persist long after the event of their creation. They circulate, are copied, are analyzed, are forgotten. They constitute a form of presence that operates independently of our awareness or intention.
-
-What does it mean to be present in a system that operates without our knowledge? What kind of presence is this—neither subjective nor objective, neither here nor there, but distributed across networks and databases, persistent but invisible?`,
-    contentRu: `Отсутствие — не противоположность присутствия, а его условие. Каждый акт присутствия создаёт новые отсутствия. Каждая запись захватывает определённые частоты, отфильтровывая другие. Каждый архив сохраняет одни следы, стирая другие.
-
-В сетевом пространстве присутствие и отсутствие становятся более сложными. Мы присутствуем в нескольких местах одновременно—или, точнее, присутствуют наши следы данных. Мы отсутствуем в физических местах, где ощущаются наши эффекты.
-
-Вопрос о присутствии в цифровом пространстве — это не просто вопрос о том, где мы находимся, но о том, что сохраняется. Следы данных сохраняются долго после события их создания. Они циркулируют, копируются, анализируются, забываются.`,
-  },
+  
   'machine-as-witness': {
     titleKey: 'essay.machine.title',
     year: '2022',
