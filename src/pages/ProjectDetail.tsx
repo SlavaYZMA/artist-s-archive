@@ -39,6 +39,14 @@ const projectsData: Record<string, ProjectData> = {
     longDescriptionKey: 'project.quantum.longDescription',
     
   },
+  'skiagraphic-description': {
+  titleKey: 'project.skiagraphic.title',
+  year: '2024',
+  mediumKey: 'project.skiagraphic.medium',
+  // externalLink: 'https://...', // уберите или закомментируйте, если ссылки нет
+  descriptionKey: 'project.skiagraphic.description',
+  longDescriptionKey: 'project.skiagraphic.longDescription',
+},
 };
 
 export default function ProjectDetail() {
