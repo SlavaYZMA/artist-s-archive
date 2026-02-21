@@ -88,10 +88,23 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.cv': 'Download CV (PDF)',
     'contact.instagram': 'iconicyzma',
      // Skiagraphic
-    'project.skiagraphic.title': 'Skiagraphic Description',
-    'project.skiagraphic.medium': 'Mixed media, installation',
-    'project.skiagraphic.description': 'Analysis of the 'shadow' structures of experience through graphic and spatial description.',
-    'project.skiagraphic.longDescription': "Full description of the project: how it explores shadows, light, and the documentation of presence...',
+    'project.skiagraphic.title': 'Spectral Flesh: Skiagraphic Description',
+    'project.skiagraphic.medium': 'Interactive installation, algorithmic voyeurism',
+    'project.skiagraphic.description': 'An exploration of "leaky boundaries" through the algorithmic deconstruction of shadows and neural network hallucinations.',
+    'project.skiagraphic.longDescription': `
+        The project explores the body as an "occlusion system" — a physical object whose presence is documented through the absence of light. 
+        At the center of the installation, a white wall and high-contrast light transform the viewer's shadow into a "two-dimensional corpse" (cadere), 
+        a liminal state between the living subject and its digital trace.
+
+        Employing methods of algorithmic voyeurism, a neural network analyzes the flat contour of the shadow to 
+        reconstruct the volume and details of naked flesh. Lacking depth data, the AI consults its 
+        latent space — a digital library of millions of other bodies — to "hallucinate" a probabilistic portrait.
+
+        The result of this reconstruction falls into the "uncanny valley": a monstrous double that exposes 
+        human vulnerability to technocratic actors who convert our shadows into raw data. 
+        It is a manifestation of necropolitics, where the final battlefield for privacy is 
+        our ability to remain invisible in a world of excessive illumination.
+    `,
   },
   ru: {
     // Navigation
@@ -174,10 +187,23 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.instagram': 'iconicyzma',
     
     // Skiagraphic
-    'project.skiagraphic.title': 'Скиаграфическая дескрипция',
-    'project.skiagraphic.medium': 'Смешанная техника, инсталляция',
-    'project.skiagraphic.description': 'Анализ «теневых» структур опыта через графическое и пространственное описание.',
-    'project.skiagraphic.longDescription': "Полное описание проекта: исследование теней, света и документации присутствия в пространстве...',
+    'project.skiagraphic.title': 'Спектральная плоть: Скиаграфическая дескрипция',
+    'project.skiagraphic.medium': 'Интерактивная инсталляция, алгоритмический вуайеризм',
+    'project.skiagraphic.description': 'Исследование «протекающих границ» тела через алгоритмическую деконструкцию тени и нейросетевые галлюцинации.',
+    'project.skiagraphic.longDescription': `
+        Проект исследует тело как «окклюзионную систему» — физический объект, чье присутствие фиксируется через отсутствие света. 
+        В центре инсталляции — белая стена и контрастный свет, превращающие тень зрителя в «двумерный труп» (cadere), 
+        лиминальное состояние между живым субъектом и его цифровым следом.
+
+        Используя методы алгоритмического вуайеризма, нейросеть анализирует плоский контур тени и пытается 
+        реконструировать объем и детали обнаженной плоти. Не имея данных о глубине, ИИ обращается к своему 
+        латентному пространству — цифровой библиотеке миллионов чужих тел — и «галлюцинирует» вероятностный портрет.
+
+        Результат этой реконструкции попадает в «зловещую долину»: монструозный двойник обнажает уязвимость 
+        человека перед технократическими силами, которые превращают нашу тень в ресурс для обработки. 
+        Это манифестация некрополитики данных, где последним полем битвы за приватность становится 
+        наша способность оставаться невидимыми в мире избыточного освещения.
+    `,
   },
 };
 
