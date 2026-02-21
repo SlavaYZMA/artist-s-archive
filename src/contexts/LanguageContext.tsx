@@ -87,6 +87,10 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.email': 'slavasolen@gmail.com',
     'contact.cv': 'Download CV (PDF)',
     'contact.instagram': 'iconicyzma',
+     // Skiagraphic
+    "project.skiagraphic.title": "Skiagraphic Description",
+    "project.skiagraphic.medium": "Mixed media, installation",
+    "project.skiagraphic.description": "Brief project description in English..."
   },
   ru: {
     // Navigation
@@ -167,6 +171,11 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.email': 'slavasolen@gmail.com',
     'contact.cv': 'Скачать CV (PDF)',
     'contact.instagram': 'iconicyzma',
+    
+    // Skiagraphic
+    "project.skiagraphic.title": "Skiagraphic Description",
+    "project.skiagraphic.medium": "Mixed media, installation",
+    "project.skiagraphic.description": "Brief project description in English..."
   },
 };
 
