@@ -63,11 +63,8 @@ const translations: Record<Language, Record<string, string>> = {
     'inprogress.border.status': 'Development',
     
     // Essays
-    'essay.systems.title': 'On Systems of Seeing',
-    'essay.systems.year': '2024',
-    
-    'essay.absence.title': 'Notes on Absence',
-    'essay.absence.year': '2023',
+    'essay.skiagraphic.title': 'Spectral Flesh: Skiagraphic Description',
+    'essay.skiagraphic.year': '2025',
     
     'essay.machine.title': 'The Machine as Witness',
     'essay.machine.year': '2022',
@@ -147,11 +144,8 @@ const translations: Record<Language, Record<string, string>> = {
     'inprogress.border.status': 'Разработка',
     
     // Essays
-    'essay.systems.title': 'О системах видения',
-    'essay.systems.year': '2024',
-    
-    'essay.absence.title': 'Заметки об отсутствии',
-    'essay.absence.year': '2023',
+    'essay.skiagraphic.title': 'Спектральная плоть: Скиаграфическая дескрипция',
+    'essay.skiagraphic.year': '2025',
     
     'essay.machine.title': 'Машина как свидетель',
     'essay.machine.year': '2022',
