@@ -88,9 +88,10 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.cv': 'Download CV (PDF)',
     'contact.instagram': 'iconicyzma',
      // Skiagraphic
-    "project.skiagraphic.title": "Skiagraphic Description",
-    "project.skiagraphic.medium": "Mixed media, installation",
-    "project.skiagraphic.description": "Brief project description in English..."
+    'project.skiagraphic.title': 'Skiagraphic Description',
+    'project.skiagraphic.medium': 'Mixed media, installation',
+    'project.skiagraphic.description': 'Analysis of the 'shadow' structures of experience through graphic and spatial description.',
+    'project.skiagraphic.longDescription': "Full description of the project: how it explores shadows, light, and the documentation of presence...',
   },
   ru: {
     // Navigation
@@ -173,9 +174,10 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.instagram': 'iconicyzma',
     
     // Skiagraphic
-    "project.skiagraphic.title": "Skiagraphic Description",
-    "project.skiagraphic.medium": "Mixed media, installation",
-    "project.skiagraphic.description": "Brief project description in English..."
+    'project.skiagraphic.title': 'Скиаграфическая дескрипция',
+    'project.skiagraphic.medium': 'Смешанная техника, инсталляция',
+    'project.skiagraphic.description': 'Анализ «теневых» структур опыта через графическое и пространственное описание.',
+    'project.skiagraphic.longDescription': "Полное описание проекта: исследование теней, света и документации присутствия в пространстве...',
   },
 };
 
