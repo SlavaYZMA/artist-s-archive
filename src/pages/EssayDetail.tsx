@@ -9,7 +9,6 @@ interface EssayData {
 }
 
 const essaysData: Record<string, EssayData> = {
-const essaysData: Record<string, EssayData> = {
   'spectral-flesh': {
     titleKey: 'essay.skiagraphic.title',
     year: '2025',
