@@ -31,6 +31,13 @@ const projects: Project[] = [
     mediumKey: 'project.quantum.medium',
     descriptionKey: 'project.quantum.description',
   },
+  {
+    id: 'skiagraphic-description',
+    titleKey: 'project.skiagraphic.title',
+    year: '2024', // или актуальный год
+    mediumKey: 'project.skiagraphic.medium',
+    descriptionKey: 'project.skiagraphic.description',
+  },
 ];
 
 export default function Projects() {
