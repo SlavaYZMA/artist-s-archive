@@ -9,14 +9,9 @@ interface Essay {
 
 const essays: Essay[] = [
   {
-    id: 'systems-of-seeing',
-    titleKey: 'essay.systems.title',
-    yearKey: 'essay.systems.year',
-  },
-  {
-    id: 'notes-on-absence',
-    titleKey: 'essay.absence.title',
-    yearKey: 'essay.absence.year',
+    id: 'spectral-flesh',
+    titleKey: 'essay.skiagraphic.title',
+    yearKey: 'essay.skiagraphic.year',
   },
   {
     id: 'machine-as-witness',
