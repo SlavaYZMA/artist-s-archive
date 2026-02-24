@@ -20,8 +20,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Home
-    'home.artistName': 'Slava Solen',
-    'home.statement': 'Practice focuses on the analysis of perceptual and algorithmic structures through which the experience of trauma is formed. Working with observation, archives, and systems of evaluation, I investigate how gender-based violence can be recorded and presented without visualizing the violence itself and without reproducing relations of power.',
+    'home.artistName': 'Vlada Ivanova',
+    'home.statement': 'Vlada Ivanova is an interdisciplinary artist based in Berlin, investigating the intersection of body politics, digital violence, and algorithmic perception. Working across interactive performance, AI, and participatory installations, her practice explores how technology inherits and amplifies the human gaze, often objectifying and distorting the female form.',
     
     // Labels
     'label.year': 'Year',
@@ -70,21 +70,18 @@ const translations: Record<Language, Record<string, string>> = {
     'essay.machine.year': '2022',
     
     // Statement
-    'statement.practice.title': 'Practice',
-    'statement.practice.content': 'My artistic practice focuses on the analysis of perceptual and algorithmic structures through which the experience of trauma is formed. The primary focus is on exploring methods for recording, presenting, and transmitting experiences of gender-based violence without visualizing the violence itself and without reproducing relations of power.',
-    'statement.methodology.title': 'Methodology',
-    'statement.methodology.content': 'I employ observation, archives, and algorithmic or digital processes as tools and co-authors. Technology is not an end in itself but a means to investigate the limits of visibility, ethical engagement, and collective witnessing. Projects often involve audience participation while remaining anonymous and structured to avoid hierarchy between individual experiences.',
-    'statement.themes.title': 'Themes and Investigation',
-    'statement.themes.content': '- how assessment systems and algorithmic processes shape subjective experience;\n- how trauma and experiences of violence can be recorded and represented without exploitation;\n- how collective presence and testimony create new forms of documentation and perception.',
-    'statement.audience.title': 'Audience Engagement',
-    'statement.audience.content': 'The viewer becomes involved in processes of observation, collaboration, and interaction, participating in the system of experience recording and transmission. The work creates space for reflection on the limits of control, responsibility, and participation, ensuring an ethical distance between observer and subject.',
-    'statement.ethics.title': 'Ethical Position',
-    'statement.ethics.content': 'All projects prioritize respect for lived trauma and exclude exploitative visualization of violence. Anonymity, hidden algorithms, and structured presentation establish conditions in which the fact of existence is documented, rather than the content of trauma.',
+    'statement.1.title': 'Calculated Corporeality',
+    'statement.2.title': 'The Algorithm as an Engine of Abjection',
+    'statement.2.content': 'Under the overarching concept of "Calculated Corporeality," Ivanova uses machine learning not as a tool for aesthetic perfection, but as an engine of abjection. In her live interactive performances, physical shadows are fed into real-time neural networks, exposing the hallucinatory and often grotesque ways algorithms process human presence.',
+    'statement.3.title': 'The Ethics of Witnessing',
+    'statement.3.content': 'A core element of her work is the ethics of witnessing. In video installations like "Present," which features anonymous recordings of eyes, she constructs spaces to document trauma and survival without exploiting the identities of the subjects. Her work challenges the viewer to confront the violence embedded in both physical reality and digital spaces.',
+    
     // Contact
     'contact.email': 'slavasolen@gmail.com',
     'contact.cv': 'Download CV (PDF)',
     'contact.instagram': 'iconicyzma',
-     // Skiagraphic
+    
+    // Skiagraphic
     'project.skiagraphic.title': 'Spectral Flesh: Skiagraphic Description',
     'project.skiagraphic.medium': 'Interactive installation, algorithmic voyeurism',
     'project.skiagraphic.description': 'An exploration of "leaky boundaries" through the algorithmic deconstruction of shadows and neural network hallucinations.',
@@ -101,8 +98,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Контакт',
     
     // Home
-    'home.artistName': 'Слава Солен',
-    'home.statement': 'Практика фокусируется на анализе перцептивных и алгоритмических структур, через которые формируется опыт травмы. Работая с наблюдением, архивами и системами оценки, я исследую, каким образом гендерное насилие может быть зафиксировано и представлено без визуализации самого насилия и без воспроизводства властных отношений.',
+    'home.artistName': 'Влада Иванова',
+    'home.statement': 'Влада Иванова — междисциплинарная художница из Берлина, исследующая пересечение политики телесности, цифрового насилия и алгоритмического восприятия. Работая с интерактивным перформансом, искусственным интеллектом и партиципаторными инсталляциями, она изучает, как технологии перенимают и усиливают человеческую оптику (human gaze), зачастую объективируя и искажая женское тело.',
     
     // Labels
     'label.year': 'Год',
@@ -151,16 +148,11 @@ const translations: Record<Language, Record<string, string>> = {
     'essay.machine.year': '2022',
     
     // Statement
-    'statement.practice.title': 'Практика',
-    'statement.practice.content': 'Моя художественная практика сосредоточена на анализе перцептивных и алгоритмических структур, через которые формируется опыт травмы. Основной фокус — исследование способов фиксации, представления и передачи переживаний гендерного насилия без визуализации самого насилия и без репродукции властных отношений.',
-    'statement.methodology.title': 'Методология',
-    'statement.methodology.content': 'В работе я использую наблюдение, архивы, алгоритмические и цифровые процессы как инструменты и соавторов. Технологии не являются целью сами по себе; они служат средством для исследования границ допустимой видимости, этического взаимодействия и коллективного свидетельства. Проекты часто включают участие публики, но остаются анонимными и структурированы так, чтобы исключить иерархию между индивидуальными переживаниями.',
-    'statement.themes.title': 'Темы и исследование',
-    'statement.themes.content': '- как системы оценки и алгоритмические процессы влияют на субъективный опыт;\n- как травма и переживания насилия могут фиксироваться и представляться без эксплуатации;\n- как коллективное присутствие и свидетельство создают новые формы документации и восприятия.',
-    'statement.audience.title': 'Взаимодействие со зрителем',
-    'statement.audience.content': 'Зритель вовлекается в процессы наблюдения, коллаборации и взаимодействия, становясь участником системы фиксации и передачи опыта. Работа формирует пространство для размышления о границах контроля, ответственности и участия, обеспечивая этическую дистанцию между наблюдателем и объектом исследования.',
-    'statement.ethics.title': 'Этическая позиция',
-    'statement.ethics.content': 'Все проекты ориентированы на уважение к пережитой травме и исключают эксплуатирующую визуализацию насилия. Анонимность, скрытые алгоритмы и структурированное представление создают условия, в которых фиксируется факт существования, а не содержание травмы.',
+    'statement.1.title': 'Вычисленная телесность',
+    'statement.2.title': 'Алгоритм как генератор абъекции',
+    'statement.2.content': 'В рамках глобального концепта «Вычисленная телесность» Иванова использует машинное обучение не как инструмент эстетического совершенства, а как генератор абъекции. В её живых интерактивных перформансах физические тени в реальном времени пропускаются через нейросети, обнажая галлюцинаторные и зачастую гротескные способы, которыми алгоритмы обрабатывают присутствие человека.',
+    'statement.3.title': 'Этика свидетельствования',
+    'statement.3.content': 'Ключевой элемент её практики — этика свидетельствования. В таких видеоинсталляциях, как «Присутствуют», основанных на анонимных видеозаписях глаз, она конструирует пространства для документации травмы и опыта выживания, не эксплуатируя личности героинь. Её работы бросают вызов зрителю, заставляя его столкнуться с насилием, укоренённым как в физической реальности, так и в цифровой среде.',
     
     // Contact
     'contact.email': 'slavasolen@gmail.com',
@@ -172,7 +164,6 @@ const translations: Record<Language, Record<string, string>> = {
     'project.skiagraphic.medium': 'Интерактивная инсталляция, алгоритмический вуайеризм',
     'project.skiagraphic.description': 'Исследование «протекающих границ» тела через алгоритмическую деконструкцию тени и нейросетевые галлюцинации.',
     'project.skiagraphic.longDescription': 'Проект исследует тело как «окклюзионную систему» — физический объект, чье присутствие фиксируется через отсутствие света. В центре инсталляции — белая стена и контрастный свет, превращающие тень зрителя в «двумерный труп» (cadere), лиминальное состояние между живым субъектом и его цифровым следом.\n\nИспользуя методы алгоритмического вуайеризма, нейросеть анализирует плоский контур тени и пытается реконструировать объем и детали обнаженной плоти. Не имея данных о глубине, ИИ обращается к своему латентному пространству — цифровой библиотеке миллионов чужих тел — и «галлюцинирует» вероятностный портрет.\n\nРезультат этой реконструкции попадает в «зловещую долину»: монструозный двойник обнажает уязвимость человека перед технократическими силами, которые превращают нашу тень в ресурс для обработки. Это манифестация некрополитики данных, где последним полем битвы за приватность становится наша способность оставаться невидимыми в мире избыточного освещения.',
-
   },
 };
 
