@@ -8,27 +8,16 @@ interface ProjectData {
   mediumKey: string;
   descriptionKey: string;
   longDescriptionKey: string;
-  
 }
 
 const projectsData: Record<string, ProjectData> = {
-  adjudication: {
+  /* adjudication: {
     titleKey: 'project.adjudication.title',
     year: '2024',
     mediumKey: 'project.adjudication.medium',
     externalLink: 'https://adjudication.netlify.app/',
     descriptionKey: 'project.adjudication.description',
     longDescriptionKey: 'project.adjudication.longDescription',
-    
-  },
-  present: {
-    titleKey: 'project.present.title',
-    year: '2023',
-    externalLink: 'https://vistrum.netlify.app/',
-    mediumKey: 'project.present.medium',
-    descriptionKey: 'project.present.description',
-    longDescriptionKey: 'project.present.longDescription',
-    
   },
   'quantum-portraits': {
     titleKey: 'project.quantum.title',
@@ -37,16 +26,24 @@ const projectsData: Record<string, ProjectData> = {
     mediumKey: 'project.quantum.medium',
     descriptionKey: 'project.quantum.description',
     longDescriptionKey: 'project.quantum.longDescription',
-    
+  },
+  */
+  present: {
+    titleKey: 'project.present.title',
+    year: '2025 - 2026',
+    externalLink: 'https://vistrum.netlify.app/',
+    mediumKey: 'project.present.medium',
+    descriptionKey: 'project.present.description',
+    longDescriptionKey: 'project.present.longDescription',
   },
   'skiagraphic-description': {
-  titleKey: 'project.skiagraphic.title',
-  year: '2024',
-  mediumKey: 'project.skiagraphic.medium',
-  // externalLink: 'https://...', // уберите или закомментируйте, если ссылки нет
-  descriptionKey: 'project.skiagraphic.description',
-  longDescriptionKey: 'project.skiagraphic.longDescription',
-},
+    titleKey: 'project.skiagraphic.title',
+    year: '2025',
+    mediumKey: 'project.skiagraphic.medium',
+    externalLink: 'https://latereal.netlify.app/',
+    descriptionKey: 'project.skiagraphic.description',
+    longDescriptionKey: 'project.skiagraphic.longDescription',
+  },
 };
 
 export default function ProjectDetail() {
@@ -90,7 +87,6 @@ export default function ProjectDetail() {
           <span className="text-foreground">{t(project.mediumKey)}</span>
         </div>
 
-        {/* Ссылка на внешний проект сразу после Medium */}
         {project.externalLink && (
           <div className="mt-2">
             <a 
@@ -106,8 +102,13 @@ export default function ProjectDetail() {
       </div> 
 
       <div className="border-t border-border pt-8 space-y-6">
-        <p className="text-body">{t(project.descriptionKey)}</p>
-        <p className="text-muted-foreground text-body">{t(project.longDescriptionKey)}</p>
+        <p className="text-body font-medium">{t(project.descriptionKey)}</p>
+        <div className="text-muted-foreground text-body space-y-4">
+          {/* Это позволяет разбивать текст на абзацы по символу \n */}
+          {t(project.longDescriptionKey).split('\n').map((paragraph, idx) => (
+            <p key={idx}>{paragraph}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
