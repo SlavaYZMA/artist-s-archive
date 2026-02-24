@@ -10,12 +10,20 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
+  /* {
     id: 'adjudication',
     titleKey: 'project.adjudication.title',
     year: '2025',
     mediumKey: 'project.adjudication.medium',
     descriptionKey: 'project.adjudication.description',
+  },
+  */
+  {
+    id: 'skiagraphic-description',
+    titleKey: 'project.skiagraphic.title',
+    year: '2025',
+    mediumKey: 'project.skiagraphic.medium',
+    descriptionKey: 'project.skiagraphic.description',
   },
   {
     id: 'present',
@@ -24,20 +32,14 @@ const projects: Project[] = [
     mediumKey: 'project.present.medium',
     descriptionKey: 'project.present.description',
   },
-  {
+  /* {
     id: 'quantum-portraits',
     titleKey: 'project.quantum.title',
     year: '2025',
     mediumKey: 'project.quantum.medium',
     descriptionKey: 'project.quantum.description',
   },
-  {
-    id: 'skiagraphic-description',
-    titleKey: 'project.skiagraphic.title',
-    year: '2024', // или актуальный год
-    mediumKey: 'project.skiagraphic.medium',
-    descriptionKey: 'project.skiagraphic.description',
-  },
+  */
 ];
 
 export default function Projects() {
@@ -52,7 +54,7 @@ export default function Projects() {
           <Link
             key={project.id}
             to={`/projects/${project.id}`}
-            className="project-item block"
+            className="project-item block hover:opacity-70 transition-opacity"
           >
             <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1 md:gap-4 mb-2">
               <h2 className="text-foreground">{t(project.titleKey)}</h2>
