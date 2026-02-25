@@ -35,7 +35,7 @@ const translations: Record<Language, Record<string, string>> = {
     'label.research': 'Research',
     'label.viewProject': 'View Project',
     'label.back': '← Back',
-    'label.externalLink': 'External Link',
+    'label.externalLink': 'External Link (Live Project)',
     
     // Projects
     'project.adjudication.title': 'Adjudication',
@@ -82,10 +82,10 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.instagram': 'iconicyzma',
     
     // Skiagraphic
-    'project.skiagraphic.title': 'Spectral Flesh: Skiagraphic Description',
-    'project.skiagraphic.medium': 'Interactive installation, algorithmic voyeurism',
-    'project.skiagraphic.description': 'An exploration of "leaky boundaries" through the algorithmic deconstruction of shadows and neural network hallucinations.',
-    'project.skiagraphic.longDescription': 'The project explores the body as an "occlusion system" — a physical object whose presence is documented through the absence of light. At the center of the installation, a white wall and high-contrast light transform the viewer\'s shadow into a "two-dimensional corpse" (cadere), a liminal state between the living subject and its digital trace.\n\nEmploying methods of algorithmic voyeurism, a neural network analyzes the flat contour of the shadow to reconstruct the volume and details of naked flesh. Lacking depth data, the AI consults its latent space — a digital library of millions of other bodies — to "hallucinate" a probabilistic portrait.\n\nThe result of this reconstruction falls into the "uncanny valley": a monstrous double that exposes human vulnerability to technocratic actors who convert our shadows into raw data. It is a manifestation of necropolitics, where the final battlefield for privacy is our ability to remain invisible in a world of excessive illumination.',
+    'project.skiagraphic.title': 'Calculated Corporeality: Shadow Translation',
+    'project.skiagraphic.medium': 'Interactive performance, real-time AI generation',
+    'project.skiagraphic.description': 'An exploration of algorithmic violence through the real-time translation of physical shadows into neural network hallucinations.',
+    'project.skiagraphic.longDescription': 'In an era of total visibility, even a shadow becomes an object of control. Today, the act of observation is delegated to machine code, yet the algorithm does not seek a hidden truth — it produces its own reality.\n\nFaced with a data deficit in the form of a flat silhouette, AI turns to the latent space — a colossal archive of digitized human forms and textures. Falling into algorithmic hallucination, the machine forcibly reconstructs volume where there is none.\n\nThe subject is reduced to the state of digital biomass — raw material from which the system, like Frankenstein, stitches together an algorithmic chimera. This synthetic construct has nothing in common with your genuine anatomy, but to the machine, it becomes more real than you are.\n\nThe project literalizes the basic mechanics of digital violence. The simple act of casting a shadow on a wall transforms into an act of non-consensual exposure. The practices of creating deepfakes and generating naked bodies are not a system failure, but a direct consequence of this new technological paradigm. Software code evolves, automating the mechanisms of violence and turning our physical presence into a weapon against ourselves.',
   },
   ru: {
     // Navigation
@@ -113,7 +113,7 @@ const translations: Record<Language, Record<string, string>> = {
     'label.research': 'Исследование',
     'label.viewProject': 'Смотреть проект',
     'label.back': '← Назад',
-    'label.externalLink': 'Внешняя ссылка',
+    'label.externalLink': 'Смотреть проект',
     
     // Projects
     'project.adjudication.title': 'Вынесение решений',
@@ -142,7 +142,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Essays
     'essay.skiagraphic.title': 'Спектральная плоть: Скиаграфическая дескрипция',
-    'essay.skiagraphic.year': '2025',
+    'essay.skiagraphic.year': '2026',
     
     'essay.machine.title': 'Машина как свидетель',
     'essay.machine.year': '2022',
@@ -160,10 +160,10 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.instagram': 'iconicyzma',
     
     // Skiagraphic
-    'project.skiagraphic.title': 'Спектральная плоть: Скиаграфическая дескрипция',
-    'project.skiagraphic.medium': 'Интерактивная инсталляция, алгоритмический вуайеризм',
-    'project.skiagraphic.description': 'Исследование «протекающих границ» тела через алгоритмическую деконструкцию тени и нейросетевые галлюцинации.',
-    'project.skiagraphic.longDescription': 'Проект исследует тело как «окклюзионную систему» — физический объект, чье присутствие фиксируется через отсутствие света. В центре инсталляции — белая стена и контрастный свет, превращающие тень зрителя в «двумерный труп» (cadere), лиминальное состояние между живым субъектом и его цифровым следом.\n\nИспользуя методы алгоритмического вуайеризма, нейросеть анализирует плоский контур тени и пытается реконструировать объем и детали обнаженной плоти. Не имея данных о глубине, ИИ обращается к своему латентному пространству — цифровой библиотеке миллионов чужих тел — и «галлюцинирует» вероятностный портрет.\n\nРезультат этой реконструкции попадает в «зловещую долину»: монструозный двойник обнажает уязвимость человека перед технократическими силами, которые превращают нашу тень в ресурс для обработки. Это манифестация некрополитики данных, где последним полем битвы за приватность становится наша способность оставаться невидимыми в мире избыточного освещения.',
+    'project.skiagraphic.title': 'Вычисленная телесность: Трансляция тени',
+    'project.skiagraphic.medium': 'Интерактивный перформанс, генерация ИИ в реальном времени',
+    'project.skiagraphic.description': 'Исследование алгоритмического насилия через трансляцию физических теней в нейросетевые галлюцинации в реальном времени.',
+    'project.skiagraphic.longDescription': 'В эпоху тотальной видимости даже тень становится объектом контроля. Сегодня акт наблюдения делегирован машинному коду, однако алгоритм не ищет скрытую истину — он производит собственную реальность.\n\nСталкиваясь с дефицитом данных в виде плоского силуэта, ИИ обращается к латентному пространству — колоссальному архиву оцифрованных человеческих форм и текстур. Впадая в алгоритмическую галлюцинацию, машина насильственно реконструирует объем там, где его нет.\n\nСубъект низводится до состояния цифровой биомассы — сырья, из которого система, подобно Франкенштейну, сшивает алгоритмическую химеру. Этот синтетический конструкт не имеет ничего общего с вашей подлинной анатомией, но для машины он становится реальнее вас самих.\n\nПроект буквализирует базовую механику цифрового насилия. Простое отбрасывание тени на стену превращается в акт неконсенсуального обнажения. Практики создания дипфейков и генерации обнаженных тел — это не сбой системы, а прямое следствие новой технологической парадигмы. Программный код эволюционирует, автоматизируя механизмы насилия и превращая наше физическое присутствие в оружие против нас самих.',
   },
 };
 
