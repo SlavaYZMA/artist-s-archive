@@ -30,15 +30,14 @@ function VideoCard({ item, language }: { item: PortfolioWork; language: string }
 
   return (
     <div
-      className="min-w-[280px] sm:min-w-[320px] max-w-[400px] flex-shrink-0 snap-start"
+      /* Уменьшили размер карточки галереи примерно в 2 раза */
+      className="min-w-[150px] sm:min-w-[180px] max-w-[220px] flex-shrink-0 snap-start"
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
     >
-      {/* Используем object-contain и темный фон, чтобы видео не обрезалось */}
       <div className="aspect-[9/16] bg-[#050505] overflow-hidden flex items-center justify-center rounded-sm">
         <video
           ref={ref}
-          /* #t=0.001 заставляет браузер загрузить первый кадр видео вместо пустого квадрата */
           src={`${item.src}#t=0.001`}
           muted
           loop
@@ -48,8 +47,8 @@ function VideoCard({ item, language }: { item: PortfolioWork; language: string }
         />
       </div>
       <div className="mt-3 space-y-0.5">
-        <p className="text-xs font-medium tracking-wide text-foreground">{title}</p>
-        <p className="text-[11px] font-mono text-muted-foreground leading-relaxed">{caption}</p>
+        <p className="text-[11px] sm:text-xs font-medium tracking-wide text-foreground">{title}</p>
+        <p className="text-[9px] sm:text-[10px] font-mono text-muted-foreground leading-relaxed">{caption}</p>
       </div>
     </div>
   );
@@ -69,14 +68,14 @@ function ImageCard({
   const caption = language === 'ru' && item.captionRu ? item.captionRu : item.caption;
 
   return (
-    <div className="min-w-[280px] sm:min-w-[320px] max-w-[400px] flex-shrink-0 snap-start">
-      {/* object-contain решает проблему обрезанных краев у диптихов */}
+    /* Уменьшили размер карточки галереи примерно в 2 раза */
+    <div className="min-w-[150px] sm:min-w-[180px] max-w-[220px] flex-shrink-0 snap-start">
       <div className={`${aspectClass} bg-[#050505] overflow-hidden flex items-center justify-center rounded-sm`}>
         <img src={item.src} alt={title} loading="lazy" className="w-full h-full object-contain" />
       </div>
       <div className="mt-3 space-y-0.5">
-        <p className="text-xs font-medium tracking-wide text-foreground">{title}</p>
-        <p className="text-[11px] font-mono text-muted-foreground leading-relaxed">{caption}</p>
+        <p className="text-[11px] sm:text-xs font-medium tracking-wide text-foreground">{title}</p>
+        <p className="text-[9px] sm:text-[10px] font-mono text-muted-foreground leading-relaxed">{caption}</p>
       </div>
     </div>
   );
@@ -109,13 +108,13 @@ function GallerySection({
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-        {/* Left — Mockups (Уменьшили размер мокапов в 2-3 раза: max-w-[200px] и col-span-3) */}
-        <div className="lg:col-span-3 space-y-6 lg:sticky lg:top-20 lg:self-start flex flex-col items-start">
+        {/* Left — Mockups (Мокапы крупнее, чем карточки в галерее: max-w-[320px]) */}
+        <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-20 lg:self-start flex flex-col items-start">
           {section.mockups.map((m) => {
             const isVideo = m.src.toLowerCase().endsWith('.mp4') || m.src.toLowerCase().endsWith('.webm');
             
             return (
-              <div key={m.id} className="w-[60%] lg:w-full max-w-[200px] bg-muted overflow-hidden shadow-sm">
+              <div key={m.id} className="w-[75%] sm:w-[60%] lg:w-full max-w-[320px] bg-muted overflow-hidden shadow-sm">
                 {isVideo ? (
                   <video 
                     src={m.src} 
@@ -138,9 +137,9 @@ function GallerySection({
           })}
         </div>
 
-        {/* Right — Horizontal scroll gallery (Отдали больше места под сами работы: col-span-9) */}
-        <div className="lg:col-span-9">
-          <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        {/* Right — Horizontal scroll gallery */}
+        <div className="lg:col-span-8">
+          <div className="flex gap-4 sm:gap-5 overflow-x-auto snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {section.items.map((item) =>
               item.type === 'video' ? (
                 <VideoCard key={item.id} item={item} language={language} />
