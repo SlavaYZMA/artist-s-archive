@@ -34,15 +34,17 @@ function VideoCard({ item, language }: { item: PortfolioWork; language: string }
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
     >
-      <div className="aspect-[9/16] bg-muted overflow-hidden">
+      {/* Используем object-contain и темный фон, чтобы видео не обрезалось */}
+      <div className="aspect-[9/16] bg-[#050505] overflow-hidden flex items-center justify-center rounded-sm">
         <video
           ref={ref}
-          src={item.src}
+          /* #t=0.001 заставляет браузер загрузить первый кадр видео вместо пустого квадрата */
+          src={`${item.src}#t=0.001`}
           muted
           loop
           playsInline
-          preload="metadata"
-          className="w-full h-full object-cover"
+          preload="auto"
+          className="w-full h-full object-contain"
         />
       </div>
       <div className="mt-3 space-y-0.5">
@@ -68,8 +70,9 @@ function ImageCard({
 
   return (
     <div className="min-w-[280px] sm:min-w-[320px] max-w-[400px] flex-shrink-0 snap-start">
-      <div className={`${aspectClass} bg-muted overflow-hidden`}>
-        <img src={item.src} alt={title} loading="lazy" className="w-full h-full object-cover" />
+      {/* object-contain решает проблему обрезанных краев у диптихов */}
+      <div className={`${aspectClass} bg-[#050505] overflow-hidden flex items-center justify-center rounded-sm`}>
+        <img src={item.src} alt={title} loading="lazy" className="w-full h-full object-contain" />
       </div>
       <div className="mt-3 space-y-0.5">
         <p className="text-xs font-medium tracking-wide text-foreground">{title}</p>
@@ -106,13 +109,13 @@ function GallerySection({
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-        {/* Left — Mockups (sticky on desktop) */}
-        <div className="lg:col-span-4 space-y-4 lg:sticky lg:top-20 lg:self-start">
+        {/* Left — Mockups (Уменьшили размер мокапов в 2-3 раза: max-w-[200px] и col-span-3) */}
+        <div className="lg:col-span-3 space-y-6 lg:sticky lg:top-20 lg:self-start flex flex-col items-start">
           {section.mockups.map((m) => {
             const isVideo = m.src.toLowerCase().endsWith('.mp4') || m.src.toLowerCase().endsWith('.webm');
             
             return (
-              <div key={m.id} className="bg-muted overflow-hidden">
+              <div key={m.id} className="w-[60%] lg:w-full max-w-[200px] bg-muted overflow-hidden shadow-sm">
                 {isVideo ? (
                   <video 
                     src={m.src} 
@@ -135,8 +138,8 @@ function GallerySection({
           })}
         </div>
 
-        {/* Right — Horizontal scroll gallery */}
-        <div className="lg:col-span-8">
+        {/* Right — Horizontal scroll gallery (Отдали больше места под сами работы: col-span-9) */}
+        <div className="lg:col-span-9">
           <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {section.items.map((item) =>
               item.type === 'video' ? (
