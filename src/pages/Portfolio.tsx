@@ -108,11 +108,31 @@ function GallerySection({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
         {/* Left — Mockups (sticky on desktop) */}
         <div className="lg:col-span-4 space-y-4 lg:sticky lg:top-20 lg:self-start">
-          {section.mockups.map((m) => (
-            <div key={m.id} className="bg-muted overflow-hidden">
-              <img src={m.src} alt={m.alt} loading="lazy" className="w-full h-auto object-cover" />
-            </div>
-          ))}
+          {section.mockups.map((m) => {
+            const isVideo = m.src.toLowerCase().endsWith('.mp4') || m.src.toLowerCase().endsWith('.webm');
+            
+            return (
+              <div key={m.id} className="bg-muted overflow-hidden">
+                {isVideo ? (
+                  <video 
+                    src={m.src} 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    className="w-full h-auto object-cover" 
+                  />
+                ) : (
+                  <img 
+                    src={m.src} 
+                    alt={m.alt} 
+                    loading="lazy" 
+                    className="w-full h-auto object-cover" 
+                  />
+                )}
+              </div>
+            );
+          })}
         </div>
 
         {/* Right — Horizontal scroll gallery */}
@@ -143,12 +163,12 @@ export default function Portfolio() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="mb-16 md:mb-28"
+        className="mb-16 md:mb-28 pt-8 md:pt-12"
       >
-        <h1 className="text-lg md:text-xl tracking-wide mb-2">
+        <h1 className="text-lg md:text-xl tracking-wide mb-2 uppercase">
           {language === 'ru' ? 'Вычисленная телесность' : 'Calculated Corporeality'}
         </h1>
-        <p className="text-xs text-muted-foreground font-mono max-w-prose leading-relaxed">
+        <p className="text-xs text-muted-foreground font-mono max-w-prose leading-relaxed mt-4">
           {language === 'ru'
             ? 'Избранные работы, доступные для приобретения. Принты, видео-тиражи и инсталляционные комплекты.'
             : 'Selected works available for acquisition. Prints, video editions, and installation kits.'}
