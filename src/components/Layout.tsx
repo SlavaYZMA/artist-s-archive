@@ -19,6 +19,7 @@ export default function Layout({ children }: LayoutProps) {
     { path: '/essays', label: t('nav.essays') },
     { path: '/exhibitions', label: t('nav.exhibitions') },
     { path: '/statement', label: t('nav.statement') },
+    { path: '/portfolio', label: t('nav.portfolio') },
     { path: '/contact', label: t('nav.contact') },
   ];
 
