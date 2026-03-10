@@ -82,7 +82,7 @@ function ImageCard({
   const caption = language === 'ru' && item.captionRu ? item.captionRu : item.caption;
 
   return (
-    <div className="min-w-[280px] sm:min-w-[320px] max-w-[400px] flex-shrink-0 snap-start">
+    <div className="min-w-[120px] sm:min-w-[140px] max-w-[160px] md:max-w-[180px] flex-shrink-0 snap-start">
       <div className={`${aspectClass} bg-[#050505] overflow-hidden flex items-center justify-center rounded-sm`}>
         <img src={item.src} alt={title} loading="lazy" className="w-full h-full object-contain" />
       </div>
