@@ -13,6 +13,19 @@ const reveal = {
   }),
 };
 
+/* ── inquire link ───────────────────────────────────────────── */
+function InquireLink({ item, language }: { item: PortfolioWork; language: string }) {
+  const label = language === 'ru' ? '[ Запрос ]' : '[ Inquire ]';
+  return (
+    <a
+      href={`mailto:slavasolen@gmail.com?subject=Inquiry:%20${encodeURIComponent(item.title)}`}
+      className="inline-block mt-2 text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
+    >
+      {label}
+    </a>
+  );
+}
+
 /* ── hover-play video card ──────────────────────────────────── */
 function VideoCard({ item, language }: { item: PortfolioWork; language: string }) {
   const ref = useRef<HTMLVideoElement>(null);
@@ -30,8 +43,7 @@ function VideoCard({ item, language }: { item: PortfolioWork; language: string }
 
   return (
     <div
-      /* Уменьшили размер карточки галереи примерно в 2 раза */
-      className="min-w-[150px] sm:min-w-[180px] max-w-[220px] flex-shrink-0 snap-start"
+      className="min-w-[280px] sm:min-w-[320px] max-w-[400px] flex-shrink-0 snap-start"
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
     >
@@ -39,6 +51,7 @@ function VideoCard({ item, language }: { item: PortfolioWork; language: string }
         <video
           ref={ref}
           src={`${item.src}#t=0.001`}
+          autoPlay
           muted
           loop
           playsInline
@@ -49,6 +62,7 @@ function VideoCard({ item, language }: { item: PortfolioWork; language: string }
       <div className="mt-3 space-y-0.5">
         <p className="text-[11px] sm:text-xs font-medium tracking-wide text-foreground">{title}</p>
         <p className="text-[9px] sm:text-[10px] font-mono text-muted-foreground leading-relaxed">{caption}</p>
+        <InquireLink item={item} language={language} />
       </div>
     </div>
   );
@@ -68,14 +82,14 @@ function ImageCard({
   const caption = language === 'ru' && item.captionRu ? item.captionRu : item.caption;
 
   return (
-    /* Уменьшили размер карточки галереи примерно в 2 раза */
-    <div className="min-w-[150px] sm:min-w-[180px] max-w-[220px] flex-shrink-0 snap-start">
+    <div className="min-w-[280px] sm:min-w-[320px] max-w-[400px] flex-shrink-0 snap-start">
       <div className={`${aspectClass} bg-[#050505] overflow-hidden flex items-center justify-center rounded-sm`}>
         <img src={item.src} alt={title} loading="lazy" className="w-full h-full object-contain" />
       </div>
       <div className="mt-3 space-y-0.5">
         <p className="text-[11px] sm:text-xs font-medium tracking-wide text-foreground">{title}</p>
         <p className="text-[9px] sm:text-[10px] font-mono text-muted-foreground leading-relaxed">{caption}</p>
+        <InquireLink item={item} language={language} />
       </div>
     </div>
   );
@@ -108,28 +122,28 @@ function GallerySection({
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-        {/* Left — Mockups (Мокапы крупнее, чем карточки в галерее: max-w-[320px]) */}
+        {/* Left — Mockups */}
         <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-20 lg:self-start flex flex-col items-start">
           {section.mockups.map((m) => {
             const isVideo = m.src.toLowerCase().endsWith('.mp4') || m.src.toLowerCase().endsWith('.webm');
-            
+
             return (
               <div key={m.id} className="w-[75%] sm:w-[60%] lg:w-full max-w-[320px] bg-muted overflow-hidden shadow-sm">
                 {isVideo ? (
-                  <video 
-                    src={m.src} 
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline 
-                    className="w-full h-auto object-cover" 
+                  <video
+                    src={m.src}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto object-cover"
                   />
                 ) : (
-                  <img 
-                    src={m.src} 
-                    alt={m.alt} 
-                    loading="lazy" 
-                    className="w-full h-auto object-cover" 
+                  <img
+                    src={m.src}
+                    alt={m.alt}
+                    loading="lazy"
+                    className="w-full h-auto object-cover"
                   />
                 )}
               </div>
@@ -182,13 +196,28 @@ export default function Portfolio() {
         <GallerySection key={section.key} section={section} language={language} index={i} />
       ))}
 
+      {/* Curatorial note */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="py-8"
+      >
+        <p className="text-[11px] text-muted-foreground font-mono italic leading-relaxed max-w-prose">
+          {language === 'ru'
+            ? 'Полный архив из 40+ экстракций предоставляется коллекционерам и кураторам по запросу.'
+            : 'Full archive of 40+ extractions is available to collectors and curators upon request.'}
+        </p>
+      </motion.div>
+
       {/* Footer note */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="border-t border-border pt-8 mt-16 md:mt-24 pb-16"
+        className="border-t border-border pt-8 mt-8 pb-16"
       >
         <p className="text-xs text-muted-foreground font-mono leading-relaxed max-w-prose">
           {language === 'ru'
