@@ -43,7 +43,7 @@ function VideoCard({ item, language }: { item: PortfolioWork; language: string }
 
   return (
     <div
-      className="min-w-[280px] sm:min-w-[320px] max-w-[400px] flex-shrink-0 snap-start"
+      className="min-w-[120px] sm:min-w-[140px] max-w-[160px] md:max-w-[180px] flex-shrink-0 snap-start"
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
     >
