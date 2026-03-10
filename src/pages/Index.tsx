@@ -10,10 +10,10 @@ export default function Index() {
           {t('home.artistName')}
         </h1>
         
-        {/* ФОТО ТЕНИ. Обязательно положи файл shadow.jpg в папку public/ */}
+        {/* ФОТО ТЕНИ. Обязательно положи файл shadow.png в папку public/ */}
         <div className="mb-8">
            <img 
-             src="/shadow.jpg" 
+             src="/shadow.png" 
              alt="Calculated Corporeality" 
              className="w-full max-h-[60vh] object-cover grayscale opacity-90" 
            />
