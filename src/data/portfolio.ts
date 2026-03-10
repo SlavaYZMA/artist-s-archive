@@ -110,7 +110,7 @@ export const portfolioSections: PortfolioSection[] = [
       { id: 'guerilla-mock-1', src: '/portfolio/video-editions/video-mockup-landscape.mp4', alt: 'Guerilla Projection Mockup' },
     ],
     items: [
-      { id: 'guerilla-01', title: 'Calculated Corporeality (Guerilla Action)', titleRu: 'Calculated Corporeality (Партизанская акция)', type: 'video', src: '/portfolio/guerilla_projections/BERLIN_GUERILLA_INTERVENTION.mp4', caption: 'Documentation of an unsanctioned urban intervention. Video projection, concrete architecture. Berlin, March 8, 2026.', captionRu: 'Документация несанкционированной уличной интервенции. Берлин, 08.03.2026.' },
+      { id: 'guerilla-01', title: 'Calculated Corporeality (Guerilla Action)', titleRu: 'Calculated Corporeality (Партизанская акция)', type: 'video', src: '/portfolio/guerilla_projections/berlin_guerilla_intervention.mp4', caption: 'Documentation of an unsanctioned urban intervention. Video projection, concrete architecture. Berlin, March 8, 2026.', captionRu: 'Документация несанкционированной уличной интервенции. Берлин, 08.03.2026.' },
     ],
   },
 ];
